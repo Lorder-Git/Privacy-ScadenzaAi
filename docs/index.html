@@ -111,13 +111,13 @@
 <body>
   <div class="container">
     <h1>Informativa sulla privacy — ScadenzaAI</h1>
-    <p class="meta">ScadenzaAI · <code>com.scadenzaai.app</code> · per l'app versione 3.2.0</p>
-    <p class="meta"><strong>Versione:</strong> 2.8.0 — <strong>Ultimo aggiornamento:</strong> 23 ottobre 2026</p>
+    <p class="meta">ScadenzaAI · <code>com.scadenzaai.app</code> · per l'app versione 3.3.0</p>
+    <p class="meta"><strong>Versione:</strong> 2.9.0 — <strong>Ultimo aggiornamento:</strong> 25 ottobre 2026</p>
 
     <div class="avviso">
       <p><strong>In breve.</strong> Le tue scadenze — nomi, date, importi, ricorrenze, note — <strong>restano solo sul tuo telefono</strong> e non vengono inviate a nessun server, né a noi né a terzi. Anche i promemoria sono programmati dal telefono. Non c'è un account, non c'è pubblicità, non ci sono strumenti di analisi o tracciamento.</p>
       <p>La connessione serve solo per: <strong>attivare e rinnovare Premium</strong> (l'app invia la chiave e un'impronta del telefono ricavata con un hash, mai le tue scadenze), <strong>controllare gli aggiornamenti</strong> dell'app e, se userai la versione web quando sarà disponibile, <strong>tenere aperta la sessione Premium</strong> nel browser. L'acquisto avviene su PayPal.</p>
-      <p>La funzione che legge le scadenze da una foto con l'intelligenza artificiale <strong>non è attiva</strong> nella versione 3.2.0 (punto 2.6).</p>
+      <p><strong>Solo se hai il piano Premium AI e scegli di usarla</strong>, c'è una funzione che legge le scadenze dalla foto di un documento: la foto viene letta sul telefono e <strong>non esce dal telefono</strong>; parte soltanto il testo letto, che viene analizzato dall'intelligenza artificiale di Cloudflare e <strong>non viene conservato</strong> (punto 2.6).</p>
     </div>
 
     <hr>
@@ -177,9 +177,15 @@
     <p>Con Premium puoi esportare le tue scadenze in un file CSV, da aprire con Excel o Fogli Google. Il file viene creato <strong>sul telefono</strong>, in una cartella temporanea dell'app, e poi si apre il menu di condivisione di Android: <strong>sei tu a scegliere</strong> se e a chi inviarlo, o dove salvarlo. L'app non lo invia a nessuno da sola.</p>
     <p>Il file contiene le scadenze che hai inserito, con importi e note: valutane il contenuto prima di condividerlo. Una volta inviato, il trattamento da parte del destinatario o dell'app che scegli segue le regole di quel destinatario.</p>
 
-    <h3>2.6 Lettura delle scadenze da una foto (AI): non attiva</h3>
-    <p>Nella versione 3.2.0 la funzione che legge le scadenze dalla foto di un documento <strong>non è attiva</strong>: il pulsante non compare nell'app, quindi l'app non scatta foto di documenti, non ne legge il testo e <strong>non invia il testo dei documenti a nessuno</strong>, né a noi né a fornitori di intelligenza artificiale.</p>
-    <p>Quando la funzione verrà riattivata, con un nuovo fornitore, <strong>aggiorneremo prima questa informativa</strong>, indicando quali dati vengono inviati, a chi e per quanto tempo vengono conservati.</p>
+    <h3>2.6 Lettura delle scadenze da una foto (AI): solo con Premium AI</h3>
+    <p>Con il piano <strong>Premium AI</strong> puoi fotografare un documento (una bolletta, un avviso, un contratto) e l'app ti propone le scadenze che ci trova. La usi solo se vuoi: puoi sempre inserire le scadenze a mano, e in quel caso non parte niente. Ecco cosa succede, passo per passo:</p>
+    <ol>
+      <li><strong>Sul telefono.</strong> Scatti la foto o la scegli dalla galleria. L'app ne legge il testo direttamente sul telefono, con il riconoscimento del testo di Google ML Kit, che funziona sul dispositivo. <strong>La foto non viene inviata a nessuno</strong>, né a noi né a Google, e l'app non la conserva.</li>
+      <li><strong>Il testo va al nostro server.</strong> Solo il testo letto (al massimo i primi 4.000 caratteri) viene inviato a <code>marketplace-apps.com/api/scadenze-ai</code>, insieme all'attivazione Premium AI che serve a verificare che il piano sia attivo. Il nostro server non salva il testo: lo inoltra e ti restituisce il risultato.</li>
+      <li><strong>L'intelligenza artificiale lo legge.</strong> Il testo viene analizzato da <strong>Cloudflare Workers AI</strong> (modello Qwen), che risponde con un elenco di possibili scadenze: nome, data, importo, categoria e ricorrenza. Cloudflare dichiara che per questo servizio non conserva il testo né la risposta dopo aver elaborato la richiesta e che <strong>non li usa per addestrare modelli di intelligenza artificiale</strong> (<a href="https://developers.cloudflare.com/workers-ai/platform/data-usage/" target="_blank">pagina di Cloudflare sull'uso dei dati</a>).</li>
+      <li><strong>Decidi tu.</strong> L'app ti mostra le scadenze trovate: le controlli, le correggi se serve e scegli quali salvare. Quelle che salvi restano solo sul telefono, come tutte le altre.</li>
+    </ol>
+    <p><strong>Attenzione:</strong> il testo di un documento può contenere dati personali, per esempio nome, indirizzo, codice cliente o importi. Usa questa funzione solo con i documenti che vuoi far leggere. L'intelligenza artificiale può sbagliare: controlla sempre date e importi sul documento originale prima di salvare.</p>
 
     <h3>2.7 Aggiornamenti dell'app</h3>
     <p>All'avvio l'app chiede a <code>marketplace-apps.com/api/versione/scadenzaai</code> qual è l'ultima versione disponibile e, se ce n'è una nuova, scarica il pacchetto di installazione da <code>files.marketplace-apps.com</code> (servizio Cloudflare R2). Sei tu a confermare l'installazione.</p>
@@ -213,7 +219,7 @@
       </tr>
       <tr>
         <td>Fotocamera</td>
-        <td>Solo per la lettura delle scadenze da una foto, che nella versione 3.2.0 non è attiva: l'app non usa la fotocamera</td>
+        <td>Solo quando usi la lettura delle scadenze da una foto (piano Premium AI, punto 2.6), per scattare la foto del documento. La foto resta sul telefono</td>
       </tr>
     </table>
 
@@ -222,7 +228,7 @@
       <li>non raccoglie dati di utilizzo, statistiche o diagnostica</li>
       <li>non usa strumenti di analisi, tracciamento o pubblicità</li>
       <li>non chiede di creare un account</li>
-      <li>non accede a rubrica, posizione o messaggi; nella versione 3.2.0 non usa fotocamera né foto</li>
+      <li>non accede a rubrica, posizione o messaggi; usa la fotocamera o una foto della galleria solo quando scegli la lettura da foto (punto 2.6), e la foto non lascia il telefono</li>
       <li>non si collega ai tuoi conti bancari e non chiede credenziali</li>
       <li>non crea profili pubblicitari; l'impronta del telefono è usata solo per l'attivazione di Premium (punto 2.3)</li>
       <li>non invia a nessun server le tue scadenze</li>
@@ -253,6 +259,10 @@
         <td>Legittimo interesse (art. 6.1.f) a prevenire usi fraudolenti delle licenze. Usiamo solo hash e date, cioè il minimo indispensabile, e si tratta di regole descritte in questa informativa: riteniamo che non prevalgano sui tuoi diritti. Puoi opporti (punto 6)</td>
       </tr>
       <tr>
+        <td>Leggere le scadenze dal testo di un documento con l'intelligenza artificiale, quando lo chiedi tu (piano Premium AI)</td>
+        <td>Esecuzione del servizio richiesto (art. 6.1.b): è una funzione del piano che hai acquistato e la usi solo quando vuoi</td>
+      </tr>
+      <tr>
         <td>Controllare e scaricare gli aggiornamenti dell'app</td>
         <td>Legittimo interesse (art. 6.1.f) a mantenere l'app sicura e corretta; viene trattato solo l'indirizzo IP della richiesta</td>
       </tr>
@@ -275,6 +285,14 @@
       <tr>
         <td>Scadenze, promemoria, chiave e attivazione salvate nell'app</td>
         <td>Sul tuo telefono, finché non li cancelli o non disinstalli l'app. Non ne esiste una copia altrove.</td>
+      </tr>
+      <tr>
+        <td>Foto del documento per la lettura AI</td>
+        <td>Non esce dal telefono e l'app non la conserva.</td>
+      </tr>
+      <tr>
+        <td>Testo del documento inviato per la lettura AI</td>
+        <td>Non conservato: il nostro server lo inoltra e Cloudflare Workers AI lo elabora senza conservarlo dopo la risposta. Le scadenze che salvi restano solo sul telefono.</td>
       </tr>
       <tr>
         <td>File CSV esportato</td>
@@ -329,11 +347,11 @@
       </tr>
       <tr>
         <td>Cloudflare (Stati Uniti)</td>
-        <td>Server delle licenze (Workers), database delle attivazioni e della promozione (D1), file degli aggiornamenti (R2), controllo anti-bot (Turnstile)</td>
+        <td>Server delle licenze (Workers), database delle attivazioni e della promozione (D1), file degli aggiornamenti (R2), controllo anti-bot (Turnstile), intelligenza artificiale che legge il testo dei documenti (Workers AI, solo piano Premium AI)</td>
       </tr>
       <tr>
         <td>Vercel (Stati Uniti)</td>
-        <td>Hosting del sito marketplace-apps.com e dei suoi servizi (pagina di acquisto, controllo versione, verifica della chiave web)</td>
+        <td>Hosting del sito marketplace-apps.com e dei suoi servizi (pagina di acquisto, controllo versione, verifica della chiave web, passaggio del testo dei documenti verso l'intelligenza artificiale)</td>
       </tr>
       <tr>
         <td>Supabase</td>
@@ -348,7 +366,7 @@
         <td>Pagamento, come titolare autonomo</td>
       </tr>
     </table>
-    <p>Nella versione 3.2.0 nessun dato viene inviato a fornitori di intelligenza artificiale (punto 2.6).</p>
+    <p>L'unico fornitore di intelligenza artificiale è Cloudflare Workers AI, e riceve solo il testo dei documenti che scegli di far leggere (punto 2.6). Le tue scadenze salvate non vengono mai inviate a nessun fornitore di intelligenza artificiale.</p>
     <p>Alcuni di questi fornitori hanno sede negli Stati Uniti o usano infrastrutture distribuite in più paesi, quindi i dati possono essere trattati fuori dall'Unione europea. In questi casi il trasferimento si basa sulla decisione di adeguatezza della Commissione europea per le aziende aderenti all'EU-U.S. Data Privacy Framework (decisione di esecuzione (UE) 2023/1795, art. 45 GDPR) oppure sulle clausole contrattuali tipo approvate dalla Commissione (art. 46 GDPR), secondo quanto indicato da ciascun fornitore nei propri documenti.</p>
     <p>Non vendiamo né cediamo i tuoi dati a nessuno.</p>
 
@@ -413,7 +431,7 @@
     <hr>
 
     <h2>10. Modifiche a questa informativa</h2>
-    <p>Se cambieremo questa informativa, aggiorneremo la versione e la data in cima al documento. Prima di attivare un nuovo trattamento di dati — per esempio se riattiveremo la lettura delle scadenze da una foto con l'AI — pubblicheremo qui la versione aggiornata.</p>
+    <p>Se cambieremo questa informativa, aggiorneremo la versione e la data in cima al documento. Prima di attivare un nuovo trattamento di dati, o di cambiare il fornitore di intelligenza artificiale, pubblicheremo qui la versione aggiornata.</p>
 
     <hr>
 

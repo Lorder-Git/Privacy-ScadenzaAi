@@ -112,7 +112,7 @@
   <div class="container">
     <h1>Informativa sulla privacy — ScadenzaAI</h1>
     <p class="meta">ScadenzaAI · <code>com.scadenzaai.app</code> · per l'app versione 3.3.0</p>
-    <p class="meta"><strong>Versione:</strong> 2.9.0 — <strong>Ultimo aggiornamento:</strong> 25 ottobre 2026</p>
+    <p class="meta"><strong>Versione:</strong> 2.10.0 — <strong>Ultimo aggiornamento:</strong> 26 ottobre 2026</p>
 
     <div class="avviso">
       <p><strong>In breve.</strong> Le tue scadenze — nomi, date, importi, ricorrenze, note — <strong>restano solo sul tuo telefono</strong> e non vengono inviate a nessun server, né a noi né a terzi. Anche i promemoria sono programmati dal telefono. Non c'è un account, non c'è pubblicità, non ci sono strumenti di analisi o tracciamento.</p>
@@ -180,7 +180,7 @@
     <h3>2.6 Lettura delle scadenze da una foto (AI): solo con Premium AI</h3>
     <p>Con il piano <strong>Premium AI</strong> puoi fotografare un documento (una bolletta, un avviso, un contratto) e l'app ti propone le scadenze che ci trova. La usi solo se vuoi: puoi sempre inserire le scadenze a mano, e in quel caso non parte niente. Ecco cosa succede, passo per passo:</p>
     <ol>
-      <li><strong>Sul telefono.</strong> Scatti la foto o la scegli dalla galleria. L'app ne legge il testo direttamente sul telefono, con il riconoscimento del testo di Google ML Kit, che funziona sul dispositivo. <strong>La foto non viene inviata a nessuno</strong>, né a noi né a Google, e l'app non la conserva.</li>
+      <li><strong>Sul telefono.</strong> Scatti la foto o la scegli dalla galleria. L'app ne legge il testo direttamente sul telefono, con il riconoscimento del testo di Google ML Kit, che funziona sul dispositivo. <strong>La foto non viene inviata a nessuno</strong>, né a noi né a Google, e l'app non la conserva. ML Kit, per funzionare, invia a Google dati tecnici di diagnostica: modello e sistema operativo del telefono, nome e versione dell'app, tempi di elaborazione, formato e dimensione dell'immagine, un identificativo dell'installazione. Google dichiara che questi dati non contengono l'immagine e non vengono passati a terzi (<a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener">pagina di Google su ML Kit</a>).</li>
       <li><strong>Il testo va al nostro server.</strong> Solo il testo letto (al massimo i primi 4.000 caratteri) viene inviato a <code>marketplace-apps.com/api/scadenze-ai</code>, insieme all'attivazione Premium AI che serve a verificare che il piano sia attivo. Il nostro server non salva il testo: lo inoltra e ti restituisce il risultato.</li>
       <li><strong>L'intelligenza artificiale lo legge.</strong> Il testo viene analizzato da <strong>Cloudflare Workers AI</strong> (modello Qwen), che risponde con un elenco di possibili scadenze: nome, data, importo, categoria e ricorrenza. Cloudflare dichiara che per questo servizio non conserva il testo né la risposta dopo aver elaborato la richiesta e che <strong>non li usa per addestrare modelli di intelligenza artificiale</strong> (<a href="https://developers.cloudflare.com/workers-ai/platform/data-usage/" target="_blank">pagina di Cloudflare sull'uso dei dati</a>).</li>
       <li><strong>Decidi tu.</strong> L'app ti mostra le scadenze trovate: le controlli, le correggi se serve e scegli quali salvare. Quelle che salvi restano solo sul telefono, come tutte le altre.</li>

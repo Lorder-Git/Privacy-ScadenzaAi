@@ -112,12 +112,12 @@
   <div class="container">
     <h1>Informativa sulla privacy — ScadenzaAI</h1>
     <p class="meta">ScadenzaAI · <code>com.scadenzaai.app</code> · per l'app versione 3.3.0</p>
-    <p class="meta"><strong>Versione:</strong> 2.10.0 — <strong>Ultimo aggiornamento:</strong> 26 ottobre 2026</p>
+    <p class="meta"><strong>Versione:</strong> 2.11.0 — <strong>Ultimo aggiornamento:</strong> 14 novembre 2026</p>
 
     <div class="avviso">
       <p><strong>In breve.</strong> Le tue scadenze — nomi, date, importi, ricorrenze, note — <strong>restano solo sul tuo telefono</strong> e non vengono inviate a nessun server, né a noi né a terzi. Anche i promemoria sono programmati dal telefono. Non c'è un account, non c'è pubblicità, non ci sono strumenti di analisi o tracciamento.</p>
       <p>La connessione serve solo per: <strong>attivare e rinnovare Premium</strong> (l'app invia la chiave e un'impronta del telefono ricavata con un hash, mai le tue scadenze), <strong>controllare gli aggiornamenti</strong> dell'app e, se userai la versione web quando sarà disponibile, <strong>tenere aperta la sessione Premium</strong> nel browser. L'acquisto avviene su PayPal.</p>
-      <p><strong>Solo se hai il piano Premium AI e scegli di usarla</strong>, c'è una funzione che legge le scadenze dalla foto di un documento: la foto viene letta sul telefono e <strong>non esce dal telefono</strong>; parte soltanto il testo letto, che viene analizzato dall'intelligenza artificiale di Cloudflare e <strong>non viene conservato</strong> (punto 2.6).</p>
+      <p><strong>Solo se hai il piano Premium AI e scegli di usarla</strong>, c'è una funzione che legge le scadenze dalla foto di un documento: la foto viene letta sul telefono e <strong>non esce dal telefono</strong>; parte soltanto il testo letto, che viene analizzato dall'intelligenza artificiale di Cloudflare e <strong>non viene conservato</strong>; il server tiene solo un contatore delle letture del mese, senza la tua email in chiaro (punto 2.6).</p>
     </div>
 
     <hr>
@@ -185,6 +185,13 @@
       <li><strong>L'intelligenza artificiale lo legge.</strong> Il testo viene analizzato da <strong>Cloudflare Workers AI</strong> (modello Qwen), che risponde con un elenco di possibili scadenze: nome, data, importo, categoria e ricorrenza. Cloudflare dichiara che per questo servizio non conserva il testo né la risposta dopo aver elaborato la richiesta e che <strong>non li usa per addestrare modelli di intelligenza artificiale</strong> (<a href="https://developers.cloudflare.com/workers-ai/platform/data-usage/" target="_blank">pagina di Cloudflare sull'uso dei dati</a>).</li>
       <li><strong>Decidi tu.</strong> L'app ti mostra le scadenze trovate: le controlli, le correggi se serve e scegli quali salvare. Quelle che salvi restano solo sul telefono, come tutte le altre.</li>
     </ol>
+    <p><strong>Tetto mensile delle letture (dal 14 novembre 2026).</strong> Il piano Premium AI comprende fino a <strong>50 letture al mese</strong>. Per farlo rispettare, a ogni lettura il nostro server aggiorna un contatore nel database del marketplace (Supabase, Unione europea). Il contatore contiene soltanto:</p>
+    <ul>
+      <li>un'<strong>impronta della licenza</strong>: un codice ricavato con una funzione di hash (SHA-256) e una chiave segreta che conosciamo solo noi, calcolato dall'email contenuta nella chiave di licenza oppure, se la chiave non contiene l'email, dall'impronta del telefono (nella versione web, quando sarà attiva: dall'email, dall'impronta della chiave o, in mancanza, della sessione). <strong>L'email non viene mai salvata in chiaro</strong>;</li>
+      <li>il nome dell'app e il <strong>mese</strong> (per esempio 2026-11);</li>
+      <li>il <strong>numero di letture</strong> usate nel mese e la data dell'ultimo aggiornamento.</li>
+    </ul>
+    <p>Nel contatore <strong>non ci sono il testo dei documenti</strong>, le scadenze trovate né il tuo indirizzo IP. Se una lettura non va a buon fine per un problema nostro (per esempio l'intelligenza artificiale non risponde), la lettura ti viene restituita. Finite le letture del mese, l'app te lo dice: ripartono dal 1° del mese successivo e puoi sempre inserire le scadenze a mano. I contatori vengono cancellati automaticamente 30 giorni dopo la fine del mese a cui si riferiscono.</p>
     <p><strong>Attenzione:</strong> il testo di un documento può contenere dati personali, per esempio nome, indirizzo, codice cliente o importi. Usa questa funzione solo con i documenti che vuoi far leggere. L'intelligenza artificiale può sbagliare: controlla sempre date e importi sul documento originale prima di salvare.</p>
 
     <h3>2.7 Aggiornamenti dell'app</h3>
@@ -263,6 +270,10 @@
         <td>Esecuzione del servizio richiesto (art. 6.1.b): è una funzione del piano che hai acquistato e la usi solo quando vuoi</td>
       </tr>
       <tr>
+        <td>Contare le letture AI del mese per far rispettare il limite del piano Premium AI (50 al mese) e restituire quelle non riuscite per un problema nostro</td>
+        <td>Esecuzione del contratto (art. 6.1.b): il numero di letture incluse è una condizione del piano, e il contatore è il minimo necessario per applicarla</td>
+      </tr>
+      <tr>
         <td>Controllare e scaricare gli aggiornamenti dell'app</td>
         <td>Legittimo interesse (art. 6.1.f) a mantenere l'app sicura e corretta; viene trattato solo l'indirizzo IP della richiesta</td>
       </tr>
@@ -293,6 +304,10 @@
       <tr>
         <td>Testo del documento inviato per la lettura AI</td>
         <td>Non conservato: il nostro server lo inoltra e Cloudflare Workers AI lo elabora senza conservarlo dopo la risposta. Le scadenze che salvi restano solo sul telefono.</td>
+      </tr>
+      <tr>
+        <td>Contatore mensile delle letture AI sul server (impronta della licenza, mese, numero di letture)</td>
+        <td>Cancellato automaticamente 30 giorni dopo la fine del mese a cui si riferisce.</td>
       </tr>
       <tr>
         <td>File CSV esportato</td>
@@ -355,7 +370,7 @@
       </tr>
       <tr>
         <td>Supabase</td>
-        <td>Database del marketplace, ospitato nell'Unione europea (Irlanda), in cui sarebbero salvate le sessioni Premium della versione web</td>
+        <td>Database del marketplace, ospitato nell'Unione europea (Irlanda), in cui si trovano i contatori mensili delle letture AI (punto 2.6) e in cui sarebbero salvate le sessioni Premium della versione web</td>
       </tr>
       <tr>
         <td>Resend (Stati Uniti)</td>
@@ -406,7 +421,7 @@
         <td>Premium → <strong>Disattiva su questo telefono</strong>.</td>
       </tr>
     </table>
-    <p>Per i dati sul server (attivazioni, sessioni web, hash della promozione) e per l'<strong>opposizione</strong> ai trattamenti basati sul legittimo interesse (art. 21) scrivici all'indirizzo del punto 11. Poiché sul server delle licenze non teniamo la tua email, per trovare i dati che ti riguardano ti chiederemo la chiave di licenza. Se ti opponi ai controlli anti-abuso, non potremo più attivare Premium con quella chiave.</p>
+    <p>Per i dati sul server (attivazioni, sessioni web, hash della promozione, contatori delle letture AI) e per l'<strong>opposizione</strong> ai trattamenti basati sul legittimo interesse (art. 21) scrivici all'indirizzo del punto 11. Poiché sul server delle licenze non teniamo la tua email, per trovare i dati che ti riguardano ti chiederemo la chiave di licenza. Se ti opponi ai controlli anti-abuso, non potremo più attivare Premium con quella chiave.</p>
     <p>Se ritieni che il trattamento violi il GDPR puoi rivolgerti al <strong>Garante per la protezione dei dati personali</strong> (<a href="https://www.garanteprivacy.it" target="_blank">www.garanteprivacy.it</a>) o all'autorità di controllo dello Stato in cui risiedi.</p>
 
     <hr>

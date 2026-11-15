@@ -1,8 +1,8 @@
 # Informativa sulla privacy — ScadenzaAI
 
-**Ultimo aggiornamento:** 06/09/2026
+**Ultimo aggiornamento:** 15/11/2026
 
-**Versione:** 2.11.0 (14/11/2026)
+**Versione:** 2.12.0 (15/11/2026)
 
 > ⚠️ ATTENZIONE: Questo è un modello ragionato, non un parere legale.
 

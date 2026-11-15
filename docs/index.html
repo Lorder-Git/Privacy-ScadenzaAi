@@ -112,7 +112,7 @@
   <div class="container">
     <h1>Informativa sulla privacy — ScadenzaAI</h1>
     <p class="meta">ScadenzaAI · <code>com.scadenzaai.app</code> · per l'app versione 3.3.0</p>
-    <p class="meta"><strong>Versione:</strong> 2.11.0 — <strong>Ultimo aggiornamento:</strong> 14 novembre 2026</p>
+    <p class="meta"><strong>Versione:</strong> 2.12.0 — <strong>Ultimo aggiornamento:</strong> 15 novembre 2026</p>
 
     <div class="avviso">
       <p><strong>In breve.</strong> Le tue scadenze — nomi, date, importi, ricorrenze, note — <strong>restano solo sul tuo telefono</strong> e non vengono inviate a nessun server, né a noi né a terzi. Anche i promemoria sono programmati dal telefono. Non c'è un account, non c'è pubblicità, non ci sono strumenti di analisi o tracciamento.</p>
@@ -159,19 +159,18 @@
     <ul>
       <li>l'hash SHA-256 della chiave;</li>
       <li>l'impronta del telefono;</li>
-      <li>il tipo di piano (per esempio se si tratta della prova gratuita);</li>
+      <li>il tipo di piano (per esempio Premium o Premium AI);</li>
       <li>la data di attivazione e quella dell'ultimo rinnovo;</li>
       <li>se cambi telefono, la data dell'ultima sostituzione automatica (è consentita una sostituzione ogni 30 giorni);</li>
       <li>se una chiave viene bloccata (per esempio dopo un rimborso o un abuso), l'hash di quella chiave.</li>
     </ul>
-    <p>La <strong>prova gratuita</strong> si può attivare una sola volta per telefono: per questo il server verifica se la stessa impronta l'ha già usata.</p>
+    <p>Oggi ScadenzaAI <strong>non offre una prova gratuita</strong>. Il server delle licenze ha però una regola comune a tutte le app: una chiave di prova si può attivare una sola volta per telefono, e per questo il server verifica se la stessa impronta l'ha già usata. La regola conta solo se ricevi una chiave di prova.</p>
     <p>Il pulsante <strong>Disattiva su questo telefono</strong>, nella schermata Premium, cancella dal server la riga che lega la chiave a quel telefono e libera il posto.</p>
     <p>Leggere l'identificativo Android serve solo a questo, avviene solo quando attivi o rinnovi Premium, cioè un servizio che hai chiesto tu, e non è usato per pubblicità, statistiche o profilazione.</p>
 
-    <h3>2.4 Acquisto, invio della chiave e promozioni</h3>
+    <h3>2.4 Acquisto e invio della chiave</h3>
     <p>L'acquisto di Premium avviene su <strong>PayPal</strong>: l'app apre nel tuo browser la pagina <code>marketplace-apps.com/scadenzaai/premium</code> e il pagamento si fa su una pagina di PayPal, esterna alla nostra app. Fornisci i dati di pagamento direttamente a PayPal, non a noi: <strong>non riceviamo né vediamo mai i dati della tua carta o del tuo conto PayPal</strong>. PayPal tratta quei dati come titolare autonomo, secondo la propria <a href="https://www.paypal.com/it/legalhub/paypal/privacy-full" target="_blank">informativa privacy</a>.</p>
     <p>Dopo il pagamento PayPal invia una notifica al nostro server delle licenze, che genera la chiave e te la manda all'indirizzo email del pagamento tramite il servizio di invio email <strong>Resend</strong> (mittente <code>premium@marketplace-apps.com</code>). Nel nostro server delle licenze l'email non viene salvata. Restano invece, come per ogni vendita, i dati dell'operazione che PayPal mette a disposizione del venditore nel suo conto PayPal (per esempio nome, email, importo e data).</p>
-    <p><strong>Promozione «30 giorni gratis».</strong> Se ti iscrivi a una promozione dal sito marketplace-apps.com, l'email serve a mandarti la chiave di prova (sempre tramite Resend). Nel nostro database ne resta solo un <strong>hash calcolato con una chiave segreta</strong>, che serve a impedire che la stessa email si iscriva due volte alla stessa promozione. Il modulo è protetto da Cloudflare Turnstile, un controllo anti-bot di Cloudflare.</p>
 
     <h3>2.5 Esportazione in CSV (Premium)</h3>
     <p>Con Premium puoi esportare le tue scadenze in un file CSV, da aprire con Excel o Fogli Google. Il file viene creato <strong>sul telefono</strong>, in una cartella temporanea dell'app, e poi si apre il menu di condivisione di Android: <strong>sei tu a scegliere</strong> se e a chi inviarlo, o dove salvarlo. L'app non lo invia a nessuno da sola.</p>
@@ -262,7 +261,7 @@
         <td>Esecuzione del contratto di licenza (art. 6.1.b): il limite fa parte delle condizioni dell'offerta Premium</td>
       </tr>
       <tr>
-        <td>Impedire gli abusi: una sola prova gratuita per telefono e per email, una sostituzione automatica del telefono ogni 30 giorni, blocco delle chiavi revocate</td>
+        <td>Impedire gli abusi: una sola chiave di prova per telefono, una sostituzione automatica del telefono ogni 30 giorni, blocco delle chiavi revocate</td>
         <td>Legittimo interesse (art. 6.1.f) a prevenire usi fraudolenti delle licenze. Usiamo solo hash e date, cioè il minimo indispensabile, e si tratta di regole descritte in questa informativa: riteniamo che non prevalgano sui tuoi diritti. Puoi opporti (punto 6)</td>
       </tr>
       <tr>
@@ -318,7 +317,7 @@
         <td>Finché la licenza è in uso. La riga viene cancellata subito se usi <strong>Disattiva su questo telefono</strong>, e comunque quando il telefono non rinnova l'attivazione per 90 giorni (per esempio dopo la scadenza della licenza o se smetti di usare l'app).</td>
       </tr>
       <tr>
-        <td>Attivazioni della prova gratuita (per il controllo «una prova per telefono»)</td>
+        <td>Attivazioni con una chiave di prova, se ce ne sono (per il controllo «una prova per telefono»)</td>
         <td>12 mesi dall'attivazione della prova.</td>
       </tr>
       <tr>
@@ -332,10 +331,6 @@
       <tr>
         <td>Sessioni Premium della versione web (quando sarà attiva)</td>
         <td>Fino alla scadenza della licenza o finché la sessione non viene chiusa da una più recente; le sessioni scadute vengono cancellate entro 30 giorni.</td>
-      </tr>
-      <tr>
-        <td>Hash dell'email per la promozione «30 giorni gratis»</td>
-        <td>Cancellato 30 giorni dopo la fine della campagna promozionale.</td>
       </tr>
       <tr>
         <td>Dati delle vendite visibili nel conto PayPal del venditore</td>
@@ -362,7 +357,7 @@
       </tr>
       <tr>
         <td>Cloudflare (Stati Uniti)</td>
-        <td>Server delle licenze (Workers), database delle attivazioni e della promozione (D1), file degli aggiornamenti (R2), controllo anti-bot (Turnstile), intelligenza artificiale che legge il testo dei documenti (Workers AI, solo piano Premium AI)</td>
+        <td>Server delle licenze (Workers), database delle attivazioni (D1), file degli aggiornamenti (R2), intelligenza artificiale che legge il testo dei documenti (Workers AI, solo piano Premium AI)</td>
       </tr>
       <tr>
         <td>Vercel (Stati Uniti)</td>
@@ -421,7 +416,7 @@
         <td>Premium → <strong>Disattiva su questo telefono</strong>.</td>
       </tr>
     </table>
-    <p>Per i dati sul server (attivazioni, sessioni web, hash della promozione, contatori delle letture AI) e per l'<strong>opposizione</strong> ai trattamenti basati sul legittimo interesse (art. 21) scrivici all'indirizzo del punto 11. Poiché sul server delle licenze non teniamo la tua email, per trovare i dati che ti riguardano ti chiederemo la chiave di licenza. Se ti opponi ai controlli anti-abuso, non potremo più attivare Premium con quella chiave.</p>
+    <p>Per i dati sul server (attivazioni, sessioni web, contatori delle letture AI) e per l'<strong>opposizione</strong> ai trattamenti basati sul legittimo interesse (art. 21) scrivici all'indirizzo del punto 11. Poiché sul server delle licenze non teniamo la tua email, per trovare i dati che ti riguardano ti chiederemo la chiave di licenza. Se ti opponi ai controlli anti-abuso, non potremo più attivare Premium con quella chiave.</p>
     <p>Se ritieni che il trattamento violi il GDPR puoi rivolgerti al <strong>Garante per la protezione dei dati personali</strong> (<a href="https://www.garanteprivacy.it" target="_blank">www.garanteprivacy.it</a>) o all'autorità di controllo dello Stato in cui risiedi.</p>
 
     <hr>

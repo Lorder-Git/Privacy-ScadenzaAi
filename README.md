@@ -75,7 +75,7 @@ Non diamo i suoi dati a nessuno per scopi propri.
 
 Il GDPR le garantisce di poter accedere ai suoi dati, correggerli, cancellarli, limitarne l'uso, opporsi e riceverli in un formato leggibile.
 
-- Per le scadenze sul telefono lo fa **direttamente dall'app**: le vede e le modifica tutte; con Premium, nell'app per telefono, le esporta in un file con il pulsante «Esporta in CSV» (l'icona di download in alto nella schermata principale); le elimina una per una aprendo la scadenza e toccando «Elimina» (l'icona del cestino), oppure disinstalla l'app. Per togliere l'attivazione di Premium da questo telefono ci scriva a premium@marketplace-apps.com.
+- Per le scadenze sul telefono lo fa **direttamente dall'app**: le vede e le modifica tutte; con Premium, nell'app per telefono, le esporta in un file con il pulsante «Esporta in CSV» (l'icona di download in alto nella schermata principale); le elimina una per una aprendo la scadenza e toccando «Elimina» (l'icona del cestino), oppure disinstalla l'app. Per togliere l'attivazione di Premium da questo telefono tocchi l'etichetta «Premium» in alto nella schermata principale e poi «Disattiva su questo telefono».
 - Nella versione web le scadenze restano nel suo browser: le cancella eliminando i dati del sito dalle impostazioni del browser.
 - Per i pochi dati che riceviamo noi, ci scriva a premium@marketplace-apps.com: le rispondiamo entro un mese. Per trovarli più in fretta può indicarci la chiave di licenza o scriverci dall'email dell'acquisto.
 - Può revocare in qualsiasi momento un consenso dato, senza conseguenze su quanto fatto prima.

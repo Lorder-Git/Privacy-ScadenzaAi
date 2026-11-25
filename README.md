@@ -1,198 +1,101 @@
-# Informativa sulla privacy — ScadenzaAI
+# Informativa sulla privacy di ScadenzaAI
 
-**Ultimo aggiornamento:** 15/11/2026
+*Versione 2.15.0 — aggiornata il 24/11/2026*
 
-**Versione:** 2.12.0 (15/11/2026)
+**In breve.** ScadenzaAI funziona sul suo telefono. Le scadenze che inserisce restano lì, salvo quando sceglie Lei la lettura da foto (punto 3): non le vendiamo e non le usiamo per pubblicità. Non serve un account e il servizio è protetto: connessioni cifrate, nessuna pubblicità, nessun tracciamento. Proteggiamo i suoi diritti secondo il Regolamento europeo sulla protezione dei dati (GDPR) e siamo lieti di aiutarla: ci scriva quando vuole.
 
-> ⚠️ ATTENZIONE: Questo è un modello ragionato, non un parere legale.
+## 1. Chi è il titolare
 
----
-
-## In breve
-
-ScadenzaAI funziona interamente sul tuo dispositivo. I dati che inserisci
-— le tue scadenze, gli importi, le date, le note — **non vengono inviati a
-nessun server**, né a noi né a terzi. Restano nella memoria privata
-dell'app sul tuo telefono.
-
-Non c'è registrazione, non c'è un account, non serve una connessione a
-internet per usare l'app.
-
----
-
-## 1. Titolare del trattamento
-
-Hubert Montero / Senior Developer / ScadenzaAI
-
+Hubert Montero, sviluppatore indipendente — marketplace-apps.com  
 Email: premium@marketplace-apps.com
 
-Per qualsiasi questione relativa ai tuoi dati puoi scrivere all'indirizzo
-qui sopra.
+## 2. Dove restano i suoi dati
 
----
+Le scadenze che inserisce (nome, categoria, data, importo, ricorrenza, promemoria e note) sono salvate **solo sul suo telefono**, nella memoria riservata all'app. Non esiste una copia altrove: noi non possiamo leggerle né recuperarle.
 
-## 2. Quali dati tratta l'app
+## 3. Quando l'app usa internet
 
-### 2.1 Dati che inserisci tu
+L'app si collega a internet solo per queste funzioni:
 
-Per gestire le tue scadenze l'app conserva quello che scrivi:
+- **Aggiornamenti**: l'app controlla se c'è una versione nuova e, se c'è, la scarica dal sito; non invia le sue scadenze né la sua email. Come per ogni collegamento a internet, i fornitori vedono l'indirizzo IP del telefono; noi non lo salviamo.
+- **Acquisto di Premium**: il pagamento avviene su PayPal. Riceviamo la sua email e i dati dell'ordine per inviarle la chiave e per gli obblighi fiscali.
+- **Attivazione di Premium**: l'app invia la chiave (che contiene l'email usata per l'acquisto) e un codice del telefono creato dall'app (non contiene il suo nome né il suo numero), per controllare che la chiave sia valida e usata sui dispositivi consentiti. Mai le sue scadenze.
+- **Versione web**: le scadenze restano nel suo browser. Usiamo solo cookie tecnici, necessari alla versione web: non serve il suo consenso. Nessun cookie di pubblicità o di profilazione. Il sito conta in forma aggregata quanto resta aperta la versione web, senza cookie e senza identificarla.
+- **Lettura delle scadenze da una foto (Premium AI)**: solo se la sceglie Lei. La foto viene letta sul telefono e non viene inviata a nessuno. Il testo letto viene inviato per l'analisi con l'intelligenza artificiale e poi non viene conservato; non viene usato per addestrare l'intelligenza artificiale. Il risultato è una proposta: le scadenze le controlla, le corregge e le salva Lei. L'app non prende decisioni al posto suo. Il piano comprende fino a 50 letture al mese.
+- **Il componente di Google che legge il testo della foto** invia a Google dati tecnici di funzionamento, non la foto: Google li tratta come titolare autonomo, secondo la propria informativa. Se non lo desidera, basta non usare la lettura da foto.
+- **Promemoria**: le notifiche sono create sul telefono; non passa niente da internet.
 
-- nome della scadenza
-- categoria (assicurazione, bollo, abbonamento, bolletta, ecc.)
-- data di scadenza
-- importo (se inserito)
-- ricorrenza (mensile, annuale, ecc.)
-- preferenza di notifica (quanti giorni prima avvisarti)
-- eventuali note
+## 4. Cosa ScadenzaAI non fa
 
-Sono **dati personali di natura organizzativa e potenzialmente finanziaria**.
-Vengono salvati esclusivamente nella memoria privata dell'app sul tuo
-dispositivo, in un database locale che solo ScadenzaAI può leggere.
+- Non ha account né registrazione.
+- Non mostra pubblicità e non fa profilazione.
+- Non usa strumenti di tracciamento o di statistica di terzi, salvo quanto indicato per la lettura del testo della foto.
+- Non vende e non cede i suoi dati a nessuno.
+- Non legge contatti, messaggi, posizione o altre app, e non si collega ai suoi conti.
+- Non prende decisioni basate solo su un trattamento automatico che abbiano effetti giuridici su di Lei o che la riguardino in modo simile (art. 22 GDPR).
 
-**Non vengono trasmessi a nessuno.** Non abbiamo un server che li riceve,
-non abbiamo modo di leggerli, e non possiamo recuperarli se li perdi.
+## 5. Perché trattiamo i pochi dati che riceviamo
 
-### 2.2 Notifiche
+| Dati | Perché | Base giuridica |
+|---|---|---|
+| Email e ordine | inviarle la chiave e rispettare gli obblighi fiscali | contratto e obbligo di legge (art. 6.1 b e c GDPR) |
+| Chiave e codice del telefono | attivare Premium e proteggerlo da usi non consentiti | contratto e legittimo interesse (art. 6.1 b e f) |
+| Indirizzo IP e dati tecnici del collegamento | far funzionare e proteggere il servizio | legittimo interesse (art. 6.1 f) |
+| Email della chiave e data di inizio d'uso sul web | dimostrare da quando usa Premium in caso di recesso | contratto e legittimo interesse (art. 6.1 b e f) |
+| Testo della foto da analizzare | fornirle la lettura che ha chiesto | contratto (art. 6.1 b) |
+| Numero di letture del mese, legato alla sua chiave | rispettare il limite del piano | legittimo interesse (art. 6.1 f) |
+| Messaggi e richieste che ci scrive | risponderle | contratto, se riguarda l'acquisto; altrimenti legittimo interesse a rispondere a chi ci scrive (art. 6.1 b e f) |
+| Gli stessi messaggi, dopo la risposta | poter dimostrare quanto ci siamo detti in caso di contestazione | legittimo interesse a tutelarci (art. 6.1 f) |
 
-L'app utilizza notifiche push locali per ricordarti le scadenze in arrivo.
-Le notifiche sono generate e gestite interamente dal tuo dispositivo — non
-passano da nessun server esterno, non da Google, non da noi.
+Darci questi dati è facoltativo. Senza l'email d'acquisto non possiamo inviarle la chiave; senza la chiave e il codice del telefono Premium non si attiva. Le funzioni gratuite si usano senza inviarci le sue scadenze.
 
-### 2.3 Cosa l'app NON fa
+## 6. Per quanto tempo
 
-- non raccoglie dati di utilizzo o statistiche
-- non usa strumenti di analisi o pubblicità
-- non accede alla rubrica, alla posizione, alle foto o ai messaggi
-- non si collega ai tuoi conti bancari
-- non identifica il dispositivo né crea profili pubblicitari
-- non invia dati a server esterni per nessun motivo
+- Scadenze sul telefono: finché non le cancella o disinstalla l'app.
+- Foto: non esce dal telefono e l'app non la conserva.
+- Testo analizzato: non conservato.
+- Numero di letture del mese: cancellato 30 giorni dopo la fine del mese.
+- Attivazioni: finché la licenza è in uso; cancellate entro 90 giorni dall'ultimo utilizzo (prova gratuita: 12 mesi).
+- Sessione della versione web: fino alla scadenza della licenza, poi cancellata entro 30 giorni.
+- Registrazione dell'ordine per inviarle la chiave: 90 giorni.
+- Dati della vendita: restano nel conto PayPal del venditore per 10 anni, come richiesto dalle norme sulla conservazione dei documenti fiscali (art. 2220 codice civile).
+- Indirizzo IP: noi non lo salviamo; i fornitori lo tengono per il breve tempo previsto dai loro servizi.
+- Messaggi e richieste: se ha acquistato, li conserviamo per 1 anno (licenza mensile), 3 anni (annuale) o 5 anni (triennale) dall'ultimo messaggio, e comunque non oltre 26 mesi dalla scadenza della licenza se questa data viene prima: è il tempo in cui potrebbe nascere una contestazione sulla licenza. Se non ha acquistato, 12 mesi dall'ultimo messaggio, per seguire eventuali richieste successive. Se è in corso una contestazione, li conserviamo fino alla sua conclusione. Le richieste sui suoi diritti e le nostre risposte seguono gli stessi tempi.
 
----
+## 7. A chi arrivano i dati
 
-## 3. Base giuridica e finalità
+Non diamo i suoi dati a nessuno per scopi propri.
 
-| Finalità | Base giuridica |
-|---|---|
-| Conservare e mostrare le tue scadenze | Esecuzione del servizio richiesto (art. 6.1.b GDPR) |
-| Inviarti notifiche di promemoria | Esecuzione del servizio richiesto |
-| Registrare l'eventuale attivazione Premium | Legittimo interesse (art. 6.1.f GDPR) |
+- **Fornitori di servizi informatici che trattano i dati per nostro conto** (art. 28 GDPR): Cloudflare (Stati Uniti), Vercel (Stati Uniti), Supabase (società con sede a Singapore; dati conservati nell'Unione europea), Resend (Stati Uniti).
+- **Titolari autonomi**, ciascuno con la propria informativa: PayPal, Google.
 
-Non trattiamo i tuoi dati per marketing, profilazione o decisioni
-automatizzate.
+**Trasferimenti fuori dall'Unione europea**: Cloudflare, Vercel e Resend aderiscono al quadro UE-USA sulla protezione dei dati (Data Privacy Framework), riconosciuto adeguato dalla Commissione europea; per Supabase valgono le clausole contrattuali standard approvate dalla Commissione europea. Può chiederci copia delle garanzie a premium@marketplace-apps.com.
 
----
+## 8. I suoi diritti
 
-## 4. Per quanto tempo restano
+Il GDPR le garantisce di poter accedere ai suoi dati, correggerli, cancellarli, limitarne l'uso, opporsi e riceverli in un formato leggibile.
 
-I dati restano sul tuo dispositivo finché non li cancelli tu, o finché non
-disinstalli l'app.
+- Per le scadenze sul telefono lo fa **direttamente dall'app**: le vede e le modifica tutte; con Premium, nell'app per telefono, le esporta in un file con il pulsante «Esporta in CSV» (l'icona di download in alto nella schermata principale); le elimina una per una aprendo la scadenza e toccando «Elimina» (l'icona del cestino), oppure disinstalla l'app. Per togliere l'attivazione di Premium da questo telefono ci scriva a premium@marketplace-apps.com.
+- Nella versione web le scadenze restano nel suo browser: le cancella eliminando i dati del sito dalle impostazioni del browser.
+- Per i pochi dati che riceviamo noi, ci scriva a premium@marketplace-apps.com: le rispondiamo entro un mese. Per trovarli più in fretta può indicarci la chiave di licenza o scriverci dall'email dell'acquisto.
+- Può revocare in qualsiasi momento un consenso dato, senza conseguenze su quanto fatto prima.
+- Se ritiene che i suoi diritti non siano rispettati, può presentare reclamo al Garante per la protezione dei dati personali (garanteprivacy.it).
 
-Non essendoci un server, non esiste una copia altrove che possa
-sopravvivere alla cancellazione.
+**Diritto di opposizione.** Quando trattiamo dati per un nostro legittimo interesse (proteggere le licenze, tenere sicuro il servizio), può opporsi quando vuole scrivendo a premium@marketplace-apps.com. Smettiamo, salvo motivi legittimi prevalenti che le spiegheremo.
 
----
+## 9. Sicurezza
 
-## 5. Destinatari e trasferimenti
+I dati sul telefono stanno nella memoria riservata all'app, protetta dal sistema operativo. Le comunicazioni con i nostri servizi sono cifrate. Le consigliamo di tenere attivo il blocco schermo e aggiornato il telefono.
 
-Nessun destinatario. Nessun trasferimento, né in Italia né all'estero.
+## 10. Minori
 
-I dati che inserisci non lasciano il dispositivo.
+ScadenzaAI è destinata a persone maggiorenni (18 anni) e non raccoglie consapevolmente dati di minori.
 
----
+## 11. Avvertenza
 
-## Distribuzione
+ScadenzaAI è uno strumento di promemoria e organizzazione: date e avvisi si basano sui dati che inserisce Lei e non sono consulenza finanziaria, fiscale o legale. Verifichi sempre le scadenze sui documenti originali o con l'ente di riferimento.
 
-ScadenzaAI è distribuita tramite il sito marketplace-apps.com, gestito dallo
-stesso sviluppatore. L'APK scaricabile dal sito è firmato digitalmente.
+## 12. Modifiche
 
----
+Se questa informativa cambia, la nuova versione è pubblicata qui con la data.
 
-## Il pagamento dell'abbonamento Premium
-
-La gestione delle tue scadenze resta interamente sul tuo dispositivo, come
-descritto in questa informativa. L'acquisto dell'abbonamento Premium è
-un'eccezione dichiarata: quando tocchi "Vai al pagamento", l'app apre il
-tuo browser su una pagina di PayPal, esterna alla nostra app.
-
-Su quella pagina fornisci i dati di pagamento direttamente a PayPal, non a
-noi: **non riceviamo né vediamo mai i dati della tua carta o del tuo conto
-PayPal**. PayPal tratta quei dati secondo la propria informativa privacy,
-consultabile su paypal.com.
-
-Dopo il pagamento riceverai via email una chiave di attivazione. Quella
-chiave, una volta incollata nell'app, viene verificata **esclusivamente
-sul tuo dispositivo**: la verifica non richiede una connessione a internet
-e non invia la chiave da nessuna parte.
-
-L'unico dato che ci serve per generare la chiave è l'indirizzo email a cui
-la invii, che tratteremo solo per l'invio della chiave stessa e non per
-altri scopi.
-
----
-
-## 6. I tuoi diritti
-
-Il GDPR ti riconosce il diritto di accedere ai tuoi dati, correggerli,
-cancellarli, limitarne il trattamento, opporti e riceverli in un formato
-leggibile.
-
-Trattandosi di dati che stanno solo sul tuo dispositivo, **li eserciti
-direttamente dall'app**, senza dover scrivere a nessuno:
-
-| Diritto | Come |
-|---|---|
-| Accesso (art. 15) | Tutte le tue scadenze sono visibili nella dashboard e nel calendario. |
-| Rettifica (art. 16) | Modifica o elimina qualsiasi scadenza in qualunque momento. |
-| Cancellazione (art. 17) | Elimina le scadenze una per una, oppure disinstalla l'app per cancellare tutto. |
-
-Se ritieni che il trattamento violi il GDPR puoi rivolgerti al **Garante
-per la protezione dei dati personali** (www.garanteprivacy.it) o all'autorità
-di controllo dello Stato in cui risiedi.
-
----
-
-## 7. Sicurezza
-
-I dati sono salvati nella memoria privata dell'applicazione, che il sistema
-operativo isola dalle altre app installate. Sui dispositivi Android moderni
-con blocco schermo attivo, questa memoria è cifrata dal sistema.
-
-Ti consigliamo di tenere attivo il blocco schermo del telefono e di
-mantenere aggiornato il sistema operativo.
-
-**Fai i tuoi backup.** Poiché non conserviamo copie, se perdi o formatti il
-telefono i dati non sono recuperabili.
-
----
-
-## 8. Minori
-
-L'app non è destinata a minori di 16 anni e non raccoglie
-consapevolmente dati che li riguardino.
-
----
-
-## 9. L'app non è un servizio di consulenza
-
-ScadenzaAI è **uno strumento di promemoria e organizzazione**. Le notifiche
-e le date mostrate sono basate sui dati che inserisci tu, e non
-costituiscono consulenza finanziaria, fiscale o legale.
-
-Verifica sempre le tue scadenze effettive consultando i documenti
-originali o contattando l'ente di riferimento.
-
----
-
-## 10. Modifiche a questa informativa
-
-Se cambieremo questa informativa in modo sostanziale, te lo mostreremo
-all'apertura dell'app e ti chiederemo di prenderne visione. La data in cima
-al documento indica l'ultimo aggiornamento.
-
----
-
-## 11. Contatti
-
-premium@marketplace-apps.com
-
-Rispondiamo entro 30 giorni, come previsto dall'art. 12 GDPR.
